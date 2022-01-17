@@ -6,6 +6,7 @@ Cadastro de dados de usuários utilizando conceito de Servlets e JSP, integrando
 <h1>Aprendizado</h1>
 <p>Nesse projeto consegui compreender melhor o uso do padrão MVC de projeto, possibilitando separar uma classe Servlet(onde são realizadas as requisições http), a classe "Usuário", a conexão com o SGBD e a parte de front end.</p>
 <p>Na parte de front end foi utilizado estilizações em CSS e Bootstrap.</p>
+
 ![](https://github.com/MarhlonKorb/jsp-servlet-jdbc-postgres-crud/blob/master/.settings/Captura%20de%20Tela%20(122).png)
 
 ![](https://github.com/MarhlonKorb/jsp-servlet-jdbc-postgres-crud/blob/master/.settings/Captura%20de%20Tela%20(123).png)
