@@ -1,5 +1,5 @@
 # jsp-servlet-jdbc-postgres-crud
-Cadastro de dados de usuários utilizando conceitos de Servlets e JSP, integrando PostgreSQL 10 para realizar o cadastro das informações no banco de dados.
+Cadastro de dados de usuários utilizando conceitos de Servlets e JSP, integrando PostgreSQL 10 para realizar o armazenamento das informações no banco de dados.
 
 <h2>Tecnologias utilizadas</h2>
 <p>As tecnologias utilizadas no projeto foram Servlet, uma classe Java que permite realizar requisições Http para um container Web, que nesse caso foi o TomCat versão 9 e o gerenciador de banco de dados escolhido foi o PostgreSQL na versão 10.</p>
