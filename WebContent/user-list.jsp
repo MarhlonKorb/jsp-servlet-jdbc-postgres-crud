@@ -46,7 +46,6 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <!--   for (Todo todo: todos) {  -->
                             <c:forEach var="user" items="${listUser}">
 
                                 <tr>
