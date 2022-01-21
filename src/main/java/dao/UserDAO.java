@@ -35,9 +35,9 @@ public class UserDAO {
 			e.printStackTrace();
 		} catch (ClassNotFoundException e) {
 			e.printStackTrace();
-		}
+		} 
 		return connection;
-	}
+	}	
 	
 	public void insertUser(User user) throws SQLException {
         System.out.println(INSERT_USERS_SQL);
@@ -48,9 +48,12 @@ public class UserDAO {
             preparedStatement.setString(3, user.getCountry());
             System.out.println(preparedStatement);
             preparedStatement.executeUpdate();
+            preparedStatement.close();
+            
+            System.out.println("user inserted");
         } catch (SQLException e) {
             printSQLException(e);
-        }
+        } 
     }
 	
 	public User selectUser(int id) {
@@ -71,7 +74,7 @@ public class UserDAO {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
-		}
+		} 
 		return user;
 	}	
 			
@@ -93,10 +96,13 @@ public class UserDAO {
 					String email = rs.getString("email");
 					String country = rs.getString("country");
 					users.add(new User(id, name, email, country));
+					
 				}
+				rs.close();
 			} catch (SQLException e) {
 				e.printStackTrace();
 			}
+		
 		return users;
 	}			
 	
@@ -106,6 +112,8 @@ public class UserDAO {
 			PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL); ){
 			statement.setInt(1, id);
 			rowDeleted = statement.executeUpdate() > 0;
+			statement.close();
+			System.out.println("user deleted");
 		}
 		return rowDeleted;
 	}
@@ -120,6 +128,8 @@ public class UserDAO {
 			statement.setInt(4, user.getId());
 			
 			rowUpdate = statement.executeUpdate() > 0;
+			statement.close();
+			System.out.println("user updated");
 		}
 		return rowUpdate;
 		}

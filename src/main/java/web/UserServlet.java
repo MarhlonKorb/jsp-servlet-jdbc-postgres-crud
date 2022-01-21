@@ -79,9 +79,8 @@ public class UserServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("user-form.jsp");
         request.setAttribute("user", existingUser);
         dispatcher.forward(request, response);
-
     }
-
+/*eusoupro*/
     private void insertUser(HttpServletRequest request, HttpServletResponse response)
     throws SQLException, IOException {
         String name = request.getParameter("name");
