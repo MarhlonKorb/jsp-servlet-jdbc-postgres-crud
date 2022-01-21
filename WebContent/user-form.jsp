@@ -56,7 +56,7 @@
                         </fieldset>
 
                         <fieldset class="form-group">
-                            <label>User Country</label> <input type="text" value="<c:out value='${user.country}' />" class="form-control" name="country">
+                            <label>País</label> <input type="text" value="<c:out value='${user.country}' />" class="form-control" name="country">
                         </fieldset>
 
                         <button type="submit" class="btn btn-success">Salvar</button>
