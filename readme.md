@@ -6,7 +6,7 @@ Cadastro de dados de usuários utilizando conceitos de Servlets e JSP, integrand
 <h2>Aprendizado</h2>
 <p>Nesse projeto consegui compreender melhor o uso do padrão MVC de projeto, possibilitando separar uma classe Servlet(onde são realizadas as requisições http), a classe "Usuário", a conexão com o SGBD e a parte de front end.</p>
 <p>Na parte de front end foi utilizado estilizações em CSS e Bootstrap.</p>
-<p>Foram adicionadas as libraries jstl-1.2.jar para para gerar linguagens de marcação para necessidades especiais nas jsp´s e o driver postgresql-42.3.1.jar para a conexão com o banco de dados.</p>
+<p>Foram adicionadas as libraries jstl-1.2.jar para gerar linguagens de marcação para necessidades especiais nas jsp´s e o driver postgresql-42.3.1.jar para a conexão com o banco de dados.</p>
 
 <h2>Criação da tabela no banco de dados "demo"</h2>
 
